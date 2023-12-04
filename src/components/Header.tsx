@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { signInWithGoogle, signOut } from "../firebaseConfig";
+import { signInWithGoogle, signOut } from "../firebaseApp";
 import "./Header.css";
 import AuthContext from "../context/AuthContext";
 

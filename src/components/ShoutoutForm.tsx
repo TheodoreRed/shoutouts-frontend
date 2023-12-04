@@ -4,7 +4,7 @@ import ShoutoutContext from "../context/ShoutoutContext";
 import AuthContext from "../context/AuthContext";
 import Shoutout from "../models/Shoutout";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { storage } from "../firebaseConfig";
+import { storage } from "../firebaseApp";
 
 interface Props {
   userName: string | undefined;
