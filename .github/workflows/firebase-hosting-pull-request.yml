@@ -10,8 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
-        end:
+        env:
           VITE_API_URL: https://us-central1-shoutouts-609b3.cloudfunctions.net/api
+      - run: npm test
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
