@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { signInWithGoogle, signOut } from "../firebaseApp";
+import { firebaseConfig, signInWithGoogle, signOut } from "../firebaseApp";
 import "./Header.css";
 import AuthContext from "../context/AuthContext";
 
@@ -10,6 +10,8 @@ interface Props {
 const Header = ({ userName }: Props) => {
   const { user } = useContext(AuthContext);
   console.log(user);
+
+  console.log(firebaseConfig);
 
   return (
     <header className="Header">
