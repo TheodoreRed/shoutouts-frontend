@@ -1,0 +1,26 @@
+.UserShoutouts ul {
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.UserShoutouts li {
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.UserShoutouts .fromUser {
+  color: #333;
+}
+.UserShoutouts .text {
+  padding-top: 15px;
+}
+
+.UserShoutouts a {
+  margin: 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,42 @@
+.ShoutoutList ul {
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ShoutoutList li {
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.ShoutoutList .fromUser {
+  color: #333;
+}
+
+.ShoutoutList .text {
+  padding-top: 15px;
+}
+
+.ShoutoutList .deleteAllBtn {
+  background-color: rgb(167, 10, 10);
+  position: fixed;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  top: 20px;
+  right: 0;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.ShoutoutList .deleteAllBtn:hover {
+  background-color: red;
+}
