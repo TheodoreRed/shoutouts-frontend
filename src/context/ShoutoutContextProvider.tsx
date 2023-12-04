@@ -34,7 +34,9 @@ const ShoutoutContextProvider = ({ children }: Props) => {
         setShoutouts(filteredRes);
       });
     } else {
-      getShoutouts(user?.displayName);
+      if (user && user.displayName) {
+        getShoutouts(user.displayName);
+      }
     }
   }, [profile]);
 
